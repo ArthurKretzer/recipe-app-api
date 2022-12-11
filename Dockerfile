@@ -8,7 +8,7 @@ COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
 COPY ./app /app
 WORKDIR /app
-EXPOSE 8000
+EXPOSE 8080
 
 # Creates an arg with default value, so an arg from docker-compose overwrite this
 ARG DEV=false
@@ -18,7 +18,7 @@ RUN python -m venv /py && \
     /py/bin/pip install -r /tmp/requirements.txt && \
     # Small shell script to conditionally run some commands
     if [ $DEV = "true" ]; \
-        then /py/bi/pip install -r /tmp/requirements.dev.txt; \
+        then /py/bin/pip install -r /tmp/requirements.dev.txt ; \
     # you should finish the shell script with fi
     fi && \
     # Removes temporary folder to reduce image size
