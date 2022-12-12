@@ -5,6 +5,9 @@
 # Docker
 .docker
 
+#VS code
+*.code-workspace
+
 # Python
 app/__pycache__/
 app/*/__pycache__/
