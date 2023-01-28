@@ -4,7 +4,7 @@ Project created following the course Build a Backend REST API with Python & Djan
 
 This project will create an API to access food recipes stored in databases.
 
-My interest is to develop backend knowledge using Django, to exercise usage of containers in CI/CD environemns and also to exercise test driven development.
+My interest is to develop backend knowledge using Django, to exercise usage of containers in CI/CD environments and also to exercise test driven development.
 
 Linting
 
